@@ -43,11 +43,11 @@ public class MainController extends HttpServlet {
         String action = request.getParameter("action");
         if(action == null){
             url = LOGIN_PAGE;
-            System.out.println("login_page");
+//            System.out.println("login_page");
         }else if(LOGIN.equals(action)){
             url = LOGIN_CONTROLLER;
         }
-        System.out.println(url);
+//        System.out.println(url);
     request.getRequestDispatcher(url).forward(request, response);
     }
 
